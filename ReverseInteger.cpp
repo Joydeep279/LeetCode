@@ -12,12 +12,12 @@ int main()
     while (data != 0)
     {
         temp = data % 10;
-        if (reverse > INT32_MAX / 10)
+        if (reverse > INT_MAX / 10)
         {
             cout << "OverFlow!!" << endl;
             break;
         }
-        if (reverse < INT32_MIN / 10)
+        if (reverse < INT_MIN / 10)
         {
             cout << "UnderFlow!!" << endl;
             break;
