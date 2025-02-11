@@ -7,7 +7,8 @@ int BinarySearch(int arr[], int len, int key) // ==> Return INDEX
     int end = len - 1;
     while (start <= end)
     {
-        int mid = start + (end - start) / 2;
+        int mid = end + (start - end) / 2;
+        cout << start << " " << end << " " << mid << endl;
         if (arr[mid] == key)
         {
             return mid;
